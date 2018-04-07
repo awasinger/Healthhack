@@ -25,6 +25,9 @@ Route::get('/meds',function() {
   return view('medication');
 });
 
+Route::resource('users', 'UserController')->only([
+    'edit'
+]);;
 
 
 // Route::post('/form/{token}', '');
