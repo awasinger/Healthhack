@@ -19,18 +19,21 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/form/{token}', 'HomeController@show');
+
 
 Route::get('/meds',function() {
   return view('medication');
 });
+
+
+Route::get('/form/{token}', 'CheckupsController@create');
 
 Route::resource('users', 'UserController')->only([
     'edit'
 ]);;
 
 
-// Route::post('/form/{token}', '');
+Route::post('/form/{token}', 'CheckupsController@store');
 
 /*
     doctor selects from list of ailments, attach to user

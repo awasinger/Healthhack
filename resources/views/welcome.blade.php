@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
-test
-<a href="/meds">Test
-</a>
+<section>
+    <div class="container">
+    test
+    </div>
+</section>
 @endsection

@@ -30,7 +30,7 @@ class HomeController extends Controller
         $sid = 'AC251a26c0ca40ea1123e041c193bd8ae9';
         $token = 'dab88a611cbb7ad86f79d584145f15e9';
         $client = new Client($sid, $token);
-        
+
         // Use the client to do fun stuff like send text messages!
         $client->messages->create(
             // the number you'd like to send the message to
@@ -52,10 +52,8 @@ class HomeController extends Controller
         return redirect()->action('UserController@edit', ['id' => $user->id])->with('status', 'Profile updated!');
 
     }
-    
-    public function show($token) {
-        $user = User::where('token', $token)->first();
-        
-        return view('checkup', compact('user'));
+
+    public function show ($token) {
+        return view('checkup');
     }
 }

@@ -34,4 +34,8 @@ class User extends Authenticatable
     public function ailments() {
         return $this->belongsToMany(Ailment::class);
     }
+    
+    public function checkups() {
+        return $this->hasMany(Checkup::class);
+    }
 }

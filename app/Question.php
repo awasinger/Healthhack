@@ -6,7 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Question extends Model
 {
+    protected $guarded = [];
+    
     public function ailment() {
         return $this->belongsTo(Ailment::class);
+    }
+    
+    public function answers() {
+        return $this->BelongsTo(Question::class);
     }
 }

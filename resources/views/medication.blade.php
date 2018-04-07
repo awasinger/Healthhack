@@ -1,5 +1,4 @@
 @extends('layouts.app')
-Medication
 @section('content')
 <h1>1. Medication(s):</h1>
 <form method="POST" action="{{ route('register') }}">
@@ -10,10 +9,11 @@ Medication
         <span class="invalid-feedback">
             <strong>{{ $errors->first('name') }}</strong>
         </span>
+    @endif
 </form>
 
 
 
 
-    @endif
+    
 @endsection
