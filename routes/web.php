@@ -21,6 +21,12 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/form/{token}', 'HomeController@show');
 
+Route::get('/meds',function() {
+  return view('medication');
+});
+
+
+
 // Route::post('/form/{token}', '');
 
 /*
