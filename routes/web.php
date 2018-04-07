@@ -24,16 +24,19 @@ Route::get('/home', 'HomeController@index');
 Route::get('/meds',function() {
   return view('medication');
 });
+Route::get('/daily',function() {
+  return view('checkup');
+});//Temporary until /form/{token} is fixed
 
 
-Route::get('/form/{token}', 'CheckupsController@create');
+//Route::get('/form/{token}', 'CheckupsController@create'); BROKEN
 
 Route::resource('users', 'UserController')->only([
     'edit'
 ]);;
 
 
-Route::post('/form/{token}', 'CheckupsController@store');
+//Route::post('/form/{token}', 'CheckupsController@store'); BROKEN
 
 /*
     doctor selects from list of ailments, attach to user
