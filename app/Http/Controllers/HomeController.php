@@ -43,7 +43,14 @@ class HomeController extends Controller
             )
         );
 */
-        return view('home');
+        $user = Auth::user();
+
+        /* if ($user->has('doctor')) { */
+        /*     return view('home'); */
+        /* } */
+
+        return redirect()->action('UserController@edit', ['id' => $user->id])->with('status', 'Profile updated!');
+
     }
     
     public function show($token) {
