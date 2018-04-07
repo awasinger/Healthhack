@@ -49,3 +49,8 @@
        -moz-border-radius: 8px;
             border-radius: 8px;
 }
+.firstFormContent{
+  padding: 15px 5px;
+  border-radius: 8px;
+  background-color: white;
+}

@@ -18,9 +18,11 @@
         in the form. In addition to how the patient is feeling, TITLE also asks
         about the patient's medications. The first time a patient goes to the questionaire, they
         have to fill out some background information about what medication they taking for their
-        condition and when, during the week or day, they need to take it. In the daily form,
-        this question is followed up by two other questions, asking which medicines they have taken
-        today and which ones they are going to take later in the day. This way, a caregiver or
+        condition and when, during the week or day, they need to take it. This way, the doctor/caregiver
+        can see if the patient should have taken their medicine by the time they complete the form.
+        The daily form asks what medications they have taken today and which ones they are going
+        to take later in the day which supplements the information from the first form.
+        This way, a caregiver or
         doctor can see if their patient is taking their medication. This tool revolutionizes and
         destigmatizes contact between doctor and patient.</p>
       <div class="buttonsAboutUs">
@@ -44,7 +46,7 @@
         response. This system allows patients to quickly and efficiently communicate with their
         health care provider</p>
         <div class="screenshots">
-          <img src="" class="dailyFormScreenshot">
+          <img src="/imgas" class="dailyFormScreenshot">
           <p class="captions">On the left is an image of an example daily form that a
             patient may recieve. On the right is an image of the screen that the health care
             provider would see.</p>
