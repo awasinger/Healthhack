@@ -46,9 +46,7 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function show($token) {
-
-
+    public function show ($token) {
         return view('checkup');
     }
 }

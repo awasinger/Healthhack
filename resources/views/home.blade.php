@@ -20,7 +20,7 @@
                     @endforeach
                     <br>
                     Your Doctor:
-                    {{ Auth::user()->doctor->name }}
+
                 </div>
 
             </div>

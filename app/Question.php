@@ -9,4 +9,8 @@ class Question extends Model
     public function ailment() {
         return $this->belongsTo(Ailment::class);
     }
+    
+    public function answers() {
+        return $this->BelongsTo(Question::class);
+    }
 }

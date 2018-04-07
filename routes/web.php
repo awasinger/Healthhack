@@ -26,8 +26,7 @@ Route::get('/meds',function() {
 });
 
 
-
-// Route::post('/form/{token}', '');
+Route::post('/form/{token}', 'HomeController@');
 
 /*
     doctor selects from list of ailments, attach to user
