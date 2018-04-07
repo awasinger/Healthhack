@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAilmentsTable extends Migration
+class AilmentUser extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateAilmentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('ailments', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-
+        Schema::create('ailment_user', function (Blueprint $table) {
+            $table->integer('ailment_id');
+            $table->integer('user_id');
         });
     }
 
@@ -27,6 +26,6 @@ class CreateAilmentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ailments');
+        Schema::dropIfExists('ailment_user');
     }
 }

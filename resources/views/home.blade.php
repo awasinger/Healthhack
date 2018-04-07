@@ -13,7 +13,15 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                
+                    Your ailments:
+                    <hr>
+                    @foreach (Auth::user()->ailments as $ailment)
+                        {{ $ailment->name }}
+                    @endforeach
+                    <br>
+                    Your Doctor:
+                    {{ Auth::user()->doctor->name }}
+                </div>
 
             </div>
         </div>

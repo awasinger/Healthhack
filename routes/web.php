@@ -13,11 +13,15 @@ use Twilio\Rest\Client;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware('guest');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/form/{token}', 'HomeController@show');
+
+// Route::post('/form/{token}', '');
 
 /*
     doctor selects from list of ailments, attach to user
