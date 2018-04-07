@@ -1,5 +1,5 @@
 <?php
-
+use Twilio\Rest\Client;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,4 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
+
+/*
+    doctor selects from list of ailments, attach to user
+    user doctor - set to 1 for MVP
+*/
