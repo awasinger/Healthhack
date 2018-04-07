@@ -25,7 +25,13 @@ Route::get('/meds',function() {
   return view('medication');
 });
 
+
 Route::get('/form/{token}', 'CheckupsController@create');
+
+Route::resource('users', 'UserController')->only([
+    'edit'
+]);;
+
 
 Route::post('/form/{token}', 'CheckupsController@store');
 
