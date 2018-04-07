@@ -11,6 +11,6 @@ class Answer extends Model
     }
     
     public function checkup() {
-        return $this->BelongsTo(Checkup::class)
+        return $this->BelongsTo(Checkup::class);
     }
 }
