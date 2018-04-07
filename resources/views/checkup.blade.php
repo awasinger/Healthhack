@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-//Variables have not been defined and so page is BROKEN
+
 <div class="container dailyFormContent">
 
 
@@ -35,14 +35,14 @@
     </div>
 
 
-    <div class="heartPalpatations dropDown spaceAboveSmall">
+    <div class="heartPalpatitions dropDown spaceAboveSmall">
       <h3 class="question">{{ $questions[3] }}</h3>
       <select class="col-md-3 col-form-label text-md-left" name="heart">
-        <option value="noPalpatations">No</option>
-        <option value="lightPalpatations">A very light palpation</option>
-        <option value="mediumPalpatations">Medium palpatations</option>
-        <option value="severePalpatations">Severe palpatations</option>
-        <option value="verySeverePalpatations">Very severe palapatations</option>
+        <option value="noPalpitations">No</option>
+        <option value="lightPalpitations">A very light palpitation</option>
+        <option value="mediumPalpitations">Medium palpitations</option>
+        <option value="severePalpitations">Severe palpitations</option>
+        <option value="verySeverePalpitations">Very severe palpitations</option>
       </select>
     </div>
 
