@@ -124,8 +124,11 @@ class PatientsController extends Controller
         $user = Patient::find($request->id);
         $ailments = $request->ailments;
         
-        foreach ($ailments as $ailment) {
-            $user->ailments()->attach($ailment);
+        $user->ailments()->detach();
+        if ($ailments) {
+            foreach ($ailments as $ailment) {
+                $user->ailments()->attach($ailment);
+            }
         }
         
         return redirect('/');
@@ -145,6 +148,7 @@ class PatientsController extends Controller
     
     public function selectAilments($id) {
         $ailments = Ailment::all();
-        return view('patients.selectAilments', compact('ailments', 'id'));
+        $patient = Patient::find($id);
+        return view('patients.selectAilments', compact('ailments', 'patient'));
     }
 }

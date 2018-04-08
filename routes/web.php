@@ -43,10 +43,4 @@ Route::get('/meds',function() {
 
 Route::resource('users', 'UserController')->only([
     'edit'
-]);;
-
-
-/*
-    doctor selects from list of ailments, attach to user
-    user doctor - set to 1 for MVP
-*/
+]);
