@@ -7,7 +7,7 @@
     <div class="aboutUs">
 
       <h2 class="sectionHeader">About us</h2>
-      <p class="info">TITLE is a way for doctors and patients to get in more frequent contact
+      <p class="info">{{ config('app.name') }} is a way for doctors and patients to get in more frequent contact
         with each other. Once a doctor or caregiver signs up, their patients can get daily
         checkups, in the form of customized questionaires that only take a minute to complete.
         Once the patient completes their questionaire, the doctor or caregiver has a complete list
@@ -16,7 +16,7 @@
         conditions are faring. Depending on the condition that the patient has, the questionaire
         is customized to their needs. The doctor or caregiver will also recieve alerts if something
         which needs attention is entered
-        in the form. In addition to how the patient is feeling, TITLE also asks
+        in the form. In addition to how the patient is feeling, {{ config('app.name') }} also asks
         about the patient's medications. The first time a patient goes to the questionaire, they
         have to fill out some background information about what medication they taking for their
         condition and when, during the week or day, they need to take it.

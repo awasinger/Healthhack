@@ -6,6 +6,10 @@
         <form action="/redirect" method="post" class="justify-content-center">
             {{ csrf_field() }}
             @includeWhen($ailmentIds -> contains(1), 'diabetes')
+            @includeWhen($ailmentIds -> contains(2), 'depression')
+            @includeWhen($ailmentIds -> contains(3), 'afib')
+            @includeWhen($ailmentIds -> contains(4), 'hypertension')
+            @includeWhen($ailmentIds -> contains(5), 'cholesterol')
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>

@@ -1,3 +1,5 @@
+<hr>
+<h1>Diabetes</h1>
 <div class="form-group">
   <label>What medications have you taken today:</label>
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="" name="answer[]">

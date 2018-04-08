@@ -12,6 +12,8 @@ class PatientsController extends Controller
 {
     public function __construct() {
         $this->middleware('auth')->except(['index']);
+        $this->middleware('guest')->only(['index']);
+        
     }
     /**
      * Display a listing of the resource.
@@ -113,7 +115,6 @@ class PatientsController extends Controller
                 $patient->ailments()->attach($ailment);
             }
         }
-/*
         $sid = 'AC251a26c0ca40ea1123e041c193bd8ae9';
         $token = 'dab88a611cbb7ad86f79d584145f15e9';
         $client = new Client($sid, $token);
@@ -126,10 +127,9 @@ class PatientsController extends Controller
                 // A Twilio phone number you purchased at twilio.com/console
                 'from' => '+13143101429',
                 // the body of the text message you'd like to send
-                'body' => 'Hey '. $patient->name . ' visit http://healthhack.local/questionaire/' . $patient->token . ' to fill out your daily checkup!',
+                'body' => 'Hey '. $patient->name . ' visit http://healthhack.local/questionaire/' . $patient->token . ' to fill out your checkup!',
             )
         );
-*/
         
         return redirect('/');
         
