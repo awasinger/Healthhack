@@ -10,11 +10,11 @@
     <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">When do you take these medications?*</label>
+      <label>When do you take these medications?*</label>
       <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Any notes for your doctor/caregiver?</label>
+      <label>Any notes for your doctor/caregiver?</label>
       <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
