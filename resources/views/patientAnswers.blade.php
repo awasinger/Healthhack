@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
   <h2>Frank Jones</h2>
-  <table class="table">
+  <table class="table table-striped">
     <tr>
       <th>Question</th>
       <th>Answer</th>
