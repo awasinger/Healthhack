@@ -16,7 +16,7 @@
     <div class="screenshots">
       <p class="captions">Below is an image of an example daily form that a
         patient may recieve.
-       <img src="{{URL::asset('/img/FormScreenshot.png')}}" alt="Daily form" class="image" >
+       <img src="{{URL::asset('/img/FormScreenshot.png')}}" alt="Daily form" class="screenshot" >
       <p class="captions">Below is an image of the screen that the health care
         provider would see.</p>
       <img src="" class="doctorSideScreenshot">
