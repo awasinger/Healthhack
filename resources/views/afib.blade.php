@@ -1,4 +1,4 @@
-<h2>Depression</h2>
+<h2>Atrial Fibrilation</h2>
 <div class="form-group">
   <label>What medications have you taken today:</label>
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
@@ -8,11 +8,11 @@
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
 </div>
 <div class="form-group">
-  <label>Do you feel like you are in a manic or depresion phase:</label>
+  <label>Have you felt any heart palpitations today:</label>
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
 </div>
 <div class="form-group">
-  <label>Do you need someone to check up on you:</label>
+  <label>Have you had any unusual fatigue or shortness of breath today:</label>
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
 </div>
 <div class="form-group">
