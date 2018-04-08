@@ -27,6 +27,10 @@ Route::get('/form/{token}', 'PatientsController@show');
 
 Route::post('/form/{token}', 'PatientsController@update');
 
+Route::get('/q', function () {
+    return view('questionaire');
+});
+
 Route::get('/meds',function() {
   return view('medication');
 });
