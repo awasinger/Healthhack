@@ -26,16 +26,12 @@
         doctor can see if their patient is taking their medication. This tool revolutionizes and
         destigmatizes contact between doctor and patient.</p>
 
-      <div class="buttonsAboutUs panel-footer row">
-        <div class="previous">
-          <div class="col-xs-6 text-left">
-            <a href="/register" class="register button"><button class="btn btn-primary btn-xlarge spaceAbove button2">REGISTER YOUR PATIENTS</button></a>
-          </div>
+      <div class="panel-footer row">
+        <div class="col-xs-6">
+            <a href="/register" class="button"><button class="btn btn-primary btn-xlarge spaceAbove button2">REGISTER YOUR PATIENTS</button></a>
         </div>
-        <div class="next">
-          <div class="col-xs-6 text-right">
-            <a href="" class="contactDoctor button"><button class="btn btn-primary btn-xlarge spaceAbove button2">CONTACT YOUR DOCTOR</button></a>
-          </div>
+        <div class="col-xs-6">
+            <a href="" class="button"><button class="btn btn-primary btn-xlarge spaceAbove button2">CONTACT YOUR DOCTOR</button></a>
         </div>
       </div>
 
