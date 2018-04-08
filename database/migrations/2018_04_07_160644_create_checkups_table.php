@@ -15,7 +15,7 @@ class CreateCheckupsTable extends Migration
     {
         Schema::create('checkups', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
+            $table->integer('patient_id');
             $table->timestamps();
         });
     }

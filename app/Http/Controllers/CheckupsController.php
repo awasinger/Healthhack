@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Question;
 use App\User;
+use App\Checkup;
+use App\Answer;
 
 class CheckupsController extends Controller
 {
@@ -32,14 +34,19 @@ class CheckupsController extends Controller
         $user = User::where('token', $token)->first();
         if ($user) {
             $questions = [];
-            foreach ($user->ailments as $ailment) {
-                foreach ($ailment->questions as $question) {
-                    $questions[] = $question->question;
+            if ($user->ailments) {
+                foreach ($user->ailments as $ailment) {
+                    foreach ($ailment->questions as $question) {
+                        $questions[] = $question->question;
+                    }
                 }
+                
+                return view('checkup', compact('user', 'questions', 'token'));
             }
-            return view('checkup', compact('user', 'questions', 'token'));
+            
+            
         }
-        return redirect('/');
+        return redirect('/')->with($user);
     }
 
     /**
@@ -57,16 +64,51 @@ class CheckupsController extends Controller
             'heart' => 'required',
             'heartRate' => 'required',
         ]);
+        $user = User::where('token', $token)->first();
+        
         $taken = $request->medicationsTaken;
         $toTake = $request->medicationsToTake;
         $stress = $request->stress;
         $heart = $request->heart;
         $rate = $request->heartRate;
-/*
-        Answer::create([
-            'answer' => ,
+        
+//         $max = (DB::table('users')->max('business_id') >= 0 ? DB::table('users')->max('id') : 0);
+        
+        $checkup = Checkup::create([
+            'user_id' => $user->id,
         ]);
-*/
+        
+        Answer::create([
+            'answer' => $request->medicationsTaken,
+            'question_id' => 1,
+            'checkup_id' => $checkup->id,
+        ]);
+        
+        Answer::create([
+            'answer' => $request->medicationsToTake,
+            'question_id' => 2,
+            'checkup_id' => $checkup->id,
+        ]);
+        
+        Answer::create([
+            'answer' => $request->stress,
+            'question_id' => 3,
+            'checkup_id' => $checkup->id,
+        ]);
+        
+        Answer::create([
+            'answer' => $request->heart,
+            'question_id' => 4,
+            'checkup_id' => $checkup->id,
+        ]);
+        
+        Answer::create([
+            'answer' => $request->heartRate,
+            'question_id' => 5,
+            'checkup_id' => $checkup->id,
+        ]);
+        
+        return redirect('/');
     }
 
     /**
