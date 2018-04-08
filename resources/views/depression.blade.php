@@ -1,4 +1,4 @@
-<h2>Diabetes</h2>
+<h2>Depressiom</h2>
 <div class="form-group">
   <label>What medications have you taken today:</label>
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
@@ -8,14 +8,14 @@
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
 </div>
 <div class="form-group">
-  <label>Did you/will you have an unusual amount of sugar:</label>
+  <label>Do you feel like you are in a manic or depresion phase:</label>
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
 </div>
 <div class="form-group">
-  <label>Do you have your insulin on you:</label>
+  <label>Do you need someone to check up on you:</label>
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
 </div>
 <div class="form-group">
-  <label>What is your glucose level:</label>
+  <label>If you have a smart device, what is your current heart rate:</label>
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
 </div>
