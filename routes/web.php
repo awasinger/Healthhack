@@ -37,6 +37,7 @@ Route::get('/meds',function() {
   return view('medication');
 });
 
+
 Route::resource('users', 'UserController')->only([
     'edit'
 ]);;
