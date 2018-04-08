@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Patient;
 use Auth;
 use Twilio\Rest\Client;
+use App\Ailment;
 
 class PatientsController extends Controller
 {
@@ -83,7 +84,7 @@ class PatientsController extends Controller
             )
         );
 */
-        return redirect('/home');
+        return redirect('/patients/'.$patient->id.'/ailments');
        
     }
 
@@ -118,9 +119,17 @@ class PatientsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $user = Patient::find($request->id);
+        $ailments = $request->ailments;
+        
+        foreach ($ailments as $ailment) {
+            $user->ailments()->attach($ailment);
+        }
+        
+        return redirect('/');
+        
     }
 
     /**
@@ -132,5 +141,10 @@ class PatientsController extends Controller
     public function destroy($id)
     {
         //
+    }
+    
+    public function selectAilments($id) {
+        $ailments = Ailment::all();
+        return view('patients.selectAilments', compact('ailments', 'id'));
     }
 }
