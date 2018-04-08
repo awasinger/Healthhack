@@ -127,7 +127,7 @@ class PatientsController extends Controller
                 // A Twilio phone number you purchased at twilio.com/console
                 'from' => '+13143101429',
                 // the body of the text message you'd like to send
-                'body' => 'Hey '. $patient->name . ' visit http://healthhack.local/questionaire/' . $patient->token . ' to fill out your checkup!',
+                'body' => 'Hey '. $patient->name . ' visit '.config('app.url')'/questionaire/' . $patient->token . ' to fill out your checkup!',
             )
         );
         
