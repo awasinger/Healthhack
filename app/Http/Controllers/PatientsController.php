@@ -24,6 +24,7 @@ class PatientsController extends Controller
         $ailmentIds = $patient -> ailments -> map(function($ailment) {
            return $ailment -> id; 
         });
+        
         return view('questionaire', [
             'patient' => $patient,
             'ailmentIds' => $ailmentIds
