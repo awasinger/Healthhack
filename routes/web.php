@@ -17,13 +17,17 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'PatientsController@index');
+Route::get('/home', 'UserController@index');
 
 Route::get('/questionaire/{token}', 'PatientsController@index');
 
 Route::get('/patients/create', 'PatientsController@create');
 
 Route::post('/patients/create', 'PatientsController@store');
+
+Route::get('/patients/{id}/ailments', 'PatientsController@selectAilments');
+
+Route::post('/patients/ailments', 'PatientsController@update');
 
 Route::get('/form/{token}', 'PatientsController@show');
 
@@ -40,10 +44,4 @@ Route::get('/meds',function() {
 
 Route::resource('users', 'UserController')->only([
     'edit'
-]);;
-
-
-/*
-    doctor selects from list of ailments, attach to user
-    user doctor - set to 1 for MVP
-*/
+]);
