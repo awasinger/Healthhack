@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container FirstFormContent">
+
   <h2 class="spaceLeft">Hello, NAME</h2>
   <h3 class="spaceLeft">Your doctor, NAME, sent you this daily form about your CONDITION to
     checkup on you. Please answer these questions so your doctor can know how you are feeling</h3>
@@ -19,5 +20,6 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+
 </div>
 @endsection

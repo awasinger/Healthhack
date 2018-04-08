@@ -13,9 +13,9 @@ class AilmentUser extends Migration
      */
     public function up()
     {
-        Schema::create('ailment_user', function (Blueprint $table) {
+        Schema::create('ailment_patient', function (Blueprint $table) {
             $table->integer('ailment_id');
-            $table->integer('user_id');
+            $table->integer('patient_id');
         });
     }
 
@@ -26,6 +26,6 @@ class AilmentUser extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ailment_user');
+        Schema::dropIfExists('ailment_patient');
     }
 }

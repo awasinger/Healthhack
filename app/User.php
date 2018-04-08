@@ -27,15 +27,7 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
     
-    public function doctor() {
-        return $this->belongsTo(Doctor::class);
-    }
-    
-    public function ailments() {
-        return $this->belongsToMany(Ailment::class);
-    }
-    
-    public function checkups() {
-        return $this->hasMany(Checkup::class);
+    public function patients() {
+        return $this->hasMany(Patient::class);
     }
 }
