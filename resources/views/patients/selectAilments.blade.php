@@ -12,7 +12,7 @@
             </div>
         @endforeach
         <div class="form-group">
-            <button type="submit" class="btn btn-primary">Add ailments</button>
+            <button type="submit" class="btn btn-primary">Update ailments</button>
         </div>
     </form>
 </div>

@@ -10058,8 +10058,8 @@ a.text-dark:focus {
 
 .btn-xlarge {
 
-    padding: 18px 28px;
-    font-size: 22px;
+    padding: 16px 26px;
+    font-size: 20px;
     line-height: normal;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
@@ -10074,7 +10074,7 @@ a.text-dark:focus {
   width:90%;
 }
 .button{
-  margin: 10px;
+  margin: 100px;
 }
 .screenshot{
   margin-top:10px;

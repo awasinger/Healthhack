@@ -11,6 +11,7 @@
         </div>
     </div>
     @endforeach
+    <hr>
     <a class="btn btn-primary" href="/patients/create">Add a new patient</a>
 </div>
 
