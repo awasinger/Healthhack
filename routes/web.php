@@ -19,6 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'PatientsController@index');
 
+Route::get('/questionaire/{token}', 'PatientsController@index');
+
 Route::get('/patients/create', 'PatientsController@create');
 
 Route::post('/patients/create', 'PatientsController@store');
@@ -34,12 +36,6 @@ Route::get('/q', function () {
 Route::get('/meds',function() {
   return view('medication');
 });
-
-Route::get('/questionaire', function() {
-    return view('questionaire');
-});
-
-
 
 Route::resource('users', 'UserController')->only([
     'edit'
