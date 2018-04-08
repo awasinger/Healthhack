@@ -10026,7 +10026,6 @@ a.text-dark:focus {
   background-color: white;
 }
 
-
 .buttonsAboutUs {
   margin: auto;
   width: 50%;
@@ -10038,6 +10037,7 @@ a.text-dark:focus {
 
 .howItWorks {
   padding: 10px;
+  background-color: #ffe2a0;
 }
 
 .devLinks {
@@ -10057,25 +10057,27 @@ a.text-dark:focus {
 }
 
 .btn-xlarge {
-
-    padding: 16px 26px;
-    font-size: 20px;
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
+  padding: 18px 28px;
+  font-size: 22px;
+  line-height: normal;
+  border-radius: 8px;
 }
-.FirstFormContent{
-  padding: 15px;
+
+.firstFormContent {
+  padding: 15px 5px;
   border-radius: 8px;
   background-color: white;
 }
-.image{
-  width:90%;
+
+.navbar-logo {
+  width: 100px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  margin-top: 5px;
+  background: none;
+  float: right;
+  display: inline;
 }
-.button{
-  margin: 100px;
-}
-.screenshot{
-  margin-top:10px;
-}
+
