@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="howItWorks containerHomePage container">
-  <h2 class="sectionHeader">How it Works -</h2>
+  <h2 class="sectionHeader">How it Works</h2>
   <p class="info">Once a doctor/caregiver registers a patient with a condition and a phone
     number, TITLE sends an automated message to the patient with a link to a form. For the
     first time, the form asks for some basic information about what medication the patient
@@ -16,10 +16,10 @@
     <div class="screenshots">
       <p class="captions">Below is an image of an example daily form that a
         patient may recieve.
-       <img src="{{URL::asset('/img/FormScreenshot.png')}}" alt="Daily form" class="image" >
+       <img src="{{URL::asset('/img/FormScreenshot.png')}}" alt="Daily form" class="screenshot" >
       <p class="captions">Below is an image of the screen that the health care
         provider would see.</p>
-      <img src="" class="doctorSideScreenshot">
+      <img src="{{URL::asset('/img/DoctorView.png')}}" class="screenshot">
     </div>
-</di
+</div>
 @endsection

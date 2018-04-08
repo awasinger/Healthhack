@@ -49,6 +49,9 @@ Route::get('/howItWorks',function() {
   return view('howItWorks');
 })->name('howItWorks');
 
+Route::get('/patientAnswers',function() {
+  return view('patientAnswers');
+})->name('patientAnswers');
 
 Route::resource('users', 'UserController')->only([
     'edit'
