@@ -31,6 +31,9 @@ Route::get('/meds',function() {
   return view('medication');
 });
 
+Route::get('/questionaire', function() {
+    return view('questionaire');
+});
 
 
 

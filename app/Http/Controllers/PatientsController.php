@@ -19,7 +19,7 @@ class PatientsController extends Controller
      */
     public function index()
     {
-        return view('user.profile');
+        return view('questionaire');
     }
 
     /**
