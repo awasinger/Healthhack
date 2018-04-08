@@ -10026,6 +10026,7 @@ a.text-dark:focus {
   background-color: white;
 }
 
+
 .buttonsAboutUs {
   margin: auto;
   width: 50%;
@@ -10057,15 +10058,23 @@ a.text-dark:focus {
 }
 
 .btn-xlarge {
-  padding: 18px 28px;
-  font-size: 22px;
-  line-height: normal;
-  border-radius: 8px;
-}
 
-.firstFormContent {
-  padding: 15px 5px;
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+.FirstFormContent{
+  padding: 15px;
   border-radius: 8px;
   background-color: white;
+}
+.image{
+  width:90%;
+}
+.button{
+  margin: 10px;
 }
 
