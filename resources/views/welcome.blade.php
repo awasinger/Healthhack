@@ -6,7 +6,7 @@
 
     <div class="aboutUs">
 
-      <h2 class="sectionHeader">About us -</h2>
+      <h2 class="sectionHeader">About us</h2>
       <p class="info">TITLE is a way for doctors and patients to get in more frequent contact
         with each other. Once a doctor or caregiver signs up, their patients can get daily
         checkups, in the form of customized questionaires that only take a minute to complete.
@@ -29,14 +29,12 @@
       <div class="buttonsAboutUs panel-footer row">
         <div class="previous">
           <div class="col-xs-6 text-left">
-            <a href="/register" class="register button"><button class="btn btn-primary btn-xlarge spaceAbove button2">Register
-              Now (Doctor/Caregiver)!</button></a>
+            <a href="/register" class="register button"><button class="btn btn-primary btn-xlarge spaceAbove button2">REGISTER YOUR PATIENTS</button></a>
           </div>
         </div>
         <div class="next">
           <div class="col-xs-6 text-right">
-            <a href="" class="contactDoctor button"><button class="btn btn-primary btn-xlarge spaceAbove button2">Contact Your
-              Doctor/Caregiver</button></a>
+            <a href="" class="contactDoctor button"><button class="btn btn-primary btn-xlarge spaceAbove button2">CONTACT YOUR DOCTOR</button></a>
           </div>
         </div>
       </div>

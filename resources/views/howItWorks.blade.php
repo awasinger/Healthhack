@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="howItWorks containerHomePage container">
-  <h2 class="sectionHeader">How it Works -</h2>
+  <h2 class="sectionHeader">How it Works</h2>
   <p class="info">Once a doctor/caregiver registers a patient with a condition and a phone
     number, TITLE sends an automated message to the patient with a link to a form. For the
     first time, the form asks for some basic information about what medication the patient
