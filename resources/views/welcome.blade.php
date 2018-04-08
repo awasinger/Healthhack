@@ -27,10 +27,10 @@
         destigmatizes contact between doctor and patient.</p>
 
       <div class="row">
-        <div class="col">
+        <div class="text-center col">
             <a href="/register" class="button"><button class="btn btn-primary btn-xlarge spaceAbove button2">REGISTER YOUR PATIENTS</button></a>
         </div>
-        <div class="col">
+        <div class="text-center col">
             <a href="" class="button"><button class="btn btn-primary btn-xlarge spaceAbove button2">CONTACT YOUR DOCTOR</button></a>
         </div>
       </div>
