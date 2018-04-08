@@ -17,26 +17,27 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'PatientsController@index');
 
+Route::get('/patients/create', 'PatientsController@create');
 
+Route::post('/patients/create', 'PatientsController@store');
+
+Route::get('/form/{token}', 'PatientsController@show');
+
+Route::post('/form/{token}', 'PatientsController@update');
 
 Route::get('/meds',function() {
   return view('medication');
 });
-Route::get('/daily',function() {
-  return view('checkup');
-});//Temporary until /form/{token} is fixed
 
 
-//Route::get('/form/{token}', 'CheckupsController@create'); BROKEN
+
 
 Route::resource('users', 'UserController')->only([
     'edit'
 ]);;
 
-
-//Route::post('/form/{token}', 'CheckupsController@store'); BROKEN
 
 /*
     doctor selects from list of ailments, attach to user

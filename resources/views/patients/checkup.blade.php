@@ -5,7 +5,7 @@
 
 
   <h2 class="spaceLeft">Hello, {{ $user->name }}</h2>
-  <h3 class="spaceLeft">Your doctor, {{-- $user->doctor->name --}}, sent you this daily form about your Hypertension to checkup on you.
+  <h3 class="spaceLeft">Your doctor, {{ $user->doctor->name }}, sent you this daily form about your Hypertension to checkup on you.
     Please answer these questions so your doctor can know how you are feeling</h3>
   <form class="dailyForm spaceLeft spaceAboveSmall" action="/form/{{$token}}" method="post">
   {{csrf_field()}}

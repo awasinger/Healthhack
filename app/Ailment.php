@@ -6,8 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ailment extends Model
 {
+    public $timestamps = false;
+    
     public function users() {
-        return $this->belongsToMany(User::class);
+        return $this->belongsToMany(Patient::class);
     }
     
     public function questions() {
