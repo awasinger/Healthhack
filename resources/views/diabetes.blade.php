@@ -8,7 +8,7 @@
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
 </div>
 <div class="form-group">
-  <label>Did you/will you have an unusual amount of sugar:</label>
+  <label>Did you/will you have an unusual amount of sugar today:</label>
   <input type="text" class="form-control col-md-4 col-form-label text-md-left" placeholder="">
 </div>
 <div class="form-group">

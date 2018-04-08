@@ -19,7 +19,7 @@
        <img src="{{URL::asset('/img/FormScreenshot.png')}}" alt="Daily form" class="screenshot" >
       <p class="captions">Below is an image of the screen that the health care
         provider would see.</p>
-      <img src="" class="doctorSideScreenshot">
+      <img src="{{URL::asset('/img/DoctorView.png')}}" class="screenshot">
     </div>
-</di
+</div>
 @endsection
