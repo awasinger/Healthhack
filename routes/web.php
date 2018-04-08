@@ -24,12 +24,9 @@ Route::get('/home', 'HomeController@index');
 Route::get('/meds',function() {
   return view('medication');
 });
-Route::get('/daily',function() {
-  return view('checkup');
-});//Temporary until /form/{token} is fixed
 
 
-//Route::get('/form/{token}', 'CheckupsController@create'); BROKEN
+Route::get('/form/{token}', 'CheckupsController@create');
 
 Route::resource('users', 'UserController')->only([
     'edit'

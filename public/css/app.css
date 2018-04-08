@@ -18,19 +18,17 @@
   border-radius: 8px;
   background-color: white;
 }
-.buttonsAboutUs{
-  margin:auto;
-  width:50%;
-}
+
 .aboutUs{
-  padding: 10px;
+  padding: 20px;
 }
 .howItWorks{
-  padding: 10px;
+  padding: 20px;
+  background-image:"{{URL::asset('/img/FormScreenshot.png')}}";
   background-color: #ffe2a0;
 }
 .devLinks{
-  padding: 10px;
+  padding: 20px;
 }
 .sectionHeader{
   font-size: 50px;
@@ -43,7 +41,7 @@
 }
 .btn-xlarge {
     padding: 18px 28px;
-    font-size: 22px; //change this to your desired size
+    font-size: 22px;
     line-height: normal;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
@@ -53,4 +51,10 @@
   padding: 15px 5px;
   border-radius: 8px;
   background-color: white;
+}
+.image{
+  width:90%;
+}
+.button{
+  margin: 10px;
 }
