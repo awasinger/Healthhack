@@ -33,6 +33,10 @@ Route::get('/form/{token}', 'PatientsController@show');
 
 Route::post('/form/{token}', 'PatientsController@update');
 
+Route::post('/redirect', function () {
+    return view('thanks');
+});
+
 Route::get('/q', function () {
     return view('questionaire');
 });

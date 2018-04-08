@@ -11,7 +11,7 @@ use App\Ailment;
 class PatientsController extends Controller
 {
     public function __construct() {
-        $this->middleware('auth')->except(['show']);
+        $this->middleware('auth')->except(['index']);
     }
     /**
      * Display a listing of the resource.
@@ -67,24 +67,6 @@ class PatientsController extends Controller
             'token' => sha1(uniqid($email, true)),
         ]);
         
-        
-/*
-        $sid = 'AC251a26c0ca40ea1123e041c193bd8ae9';
-        $token = 'dab88a611cbb7ad86f79d584145f15e9';
-        $client = new Client($sid, $token);
-
-        // Use the client to do fun stuff like send text messages!
-        $client->messages->create(
-            // the number you'd like to send the message to
-            $patient->phone,
-            array(
-                // A Twilio phone number you purchased at twilio.com/console
-                'from' => '+13143101429',
-                // the body of the text message you'd like to send
-                'body' => 'Hey '. $patient->name . ' visit http://healthhack.local/form/' . $patient->token . ' to fill out your daily checkup!',
-            )
-        );
-*/
         return redirect('/patients/'.$patient->id.'/ailments');
        
     }
@@ -122,15 +104,32 @@ class PatientsController extends Controller
      */
     public function update(Request $request)
     {
-        $user = Patient::find($request->id);
+        $patient = Patient::find($request->id);
         $ailments = $request->ailments;
         
-        $user->ailments()->detach();
+        $patient->ailments()->detach();
         if ($ailments) {
             foreach ($ailments as $ailment) {
-                $user->ailments()->attach($ailment);
+                $patient->ailments()->attach($ailment);
             }
         }
+/*
+        $sid = 'AC251a26c0ca40ea1123e041c193bd8ae9';
+        $token = 'dab88a611cbb7ad86f79d584145f15e9';
+        $client = new Client($sid, $token);
+
+        // Use the client to do fun stuff like send text messages!
+        $client->messages->create(
+            // the number you'd like to send the message to
+            $patient->phone,
+            array(
+                // A Twilio phone number you purchased at twilio.com/console
+                'from' => '+13143101429',
+                // the body of the text message you'd like to send
+                'body' => 'Hey '. $patient->name . ' visit http://healthhack.local/questionaire/' . $patient->token . ' to fill out your daily checkup!',
+            )
+        );
+*/
         
         return redirect('/');
         

@@ -6,7 +6,8 @@
     @foreach (Auth::user()->patients as $patient)
     <div class="panel panel-default">
         <div class="panel-body">
-            {{ $patient->name }}
+            <a href="/patients/{{$patient->id}}/ailments">{{ $patient->name }}</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/patients/{{$patient->id}}/ailments">Edit</a>
         </div>
     </div>
     @endforeach

@@ -17,11 +17,11 @@ class AilmentTableSeeder extends Seeder
         ]);
 
         DB::table('ailments')->insert([
-            'name' => 'Bipolar Depresstion'
+            'name' => 'Bipolar Depression'
         ]);
 
         DB::table('ailments')->insert([
-            'name' => 'Atrial Fibrilation'
+            'name' => 'Atrial Fibrillation'
         ]);
 
         DB::table('ailments')->insert([
